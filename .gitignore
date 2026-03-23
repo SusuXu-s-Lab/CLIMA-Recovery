@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Model outputs
+*_learned_graphs.npz
+*_metrics.npz
+baseline_hawkes_graph/
+
+# Large raw data (must be obtained separately)
+data/raw/fl_lee.csv
+
+# Logs and figures
+*.png
+*.jpg
+*.pdf
