@@ -78,28 +78,6 @@ python main_multi_real.py \
   --save_graphs
 ```
 
-**Expected output** (after ~5–10 min on CPU):
-
-```
-#communities after filtering = 200
-[INFO] Real-data meta: T=13, T_train=7, T_val=6
-[INFO] pos_weight per type (sell, repair) (capped): [14.14, 20.27]
-...
-[REAL-NEURAL epoch 500] loss=0.413 (nll=1.773, edge=0.011)
-
-[Real-data coupled Hawkes results]
-T_train = 7, T_val = 6
-#communities (trained) = 200
-    sell_auc_tail:          0.8159
-    sell_ap_tail:           0.0490
-    sell_auc_window_tail:   0.7880
-    sell_ap_window_tail:    0.0518
-  repair_auc_tail:          0.9809
-  repair_ap_tail:           0.0547
-  repair_auc_window_tail:   0.9795
-  repair_ap_window_tail:    0.1005
-```
-
 ### 2.2 Run Baseline Methods
 
 **Non-Hawkes baselines** (RUM, Spatial Lag, RecovUS, Neural TPP):
